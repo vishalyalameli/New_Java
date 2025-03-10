@@ -6,3 +6,4 @@ class Program2{
 		System.out.println("char = "+ch+1);
 	}
 }
+//
