@@ -6,4 +6,5 @@ class Program2{
 		System.out.println("char = "+ch+1);
 	}
 }
-//
+// char = 2 
+// char = 21
