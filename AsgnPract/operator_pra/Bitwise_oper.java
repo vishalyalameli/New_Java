@@ -11,4 +11,4 @@ class Bitwise_oper{
 		System.out.println(5>>1);
 	}
 }
-//
+
