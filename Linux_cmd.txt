@@ -1,0 +1,10 @@
+Linux cmd  class
+
+cat *.java  //  it can be show inside the file data show.
+
+ls *.java   //  it can be show all .java file only
+
+cd  /mnt/e  //  it can be change drive
+
+mkdir      //  it can be  create folder
+
