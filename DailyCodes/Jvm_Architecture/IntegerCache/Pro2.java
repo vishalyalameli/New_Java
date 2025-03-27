@@ -5,3 +5,4 @@ class Pro2{
 		System.out.println(x);
 	}
 }
+//
