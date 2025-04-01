@@ -1,17 +1,15 @@
-import java.io.*;
-class IntegerCache1{
+class Integer5{
 	public static void main(String [ ] args){
+		Integer x = 225;
+		Integer y = 225;
 
-		Integer x = 128;
-		Integer y = 128;
-
-		if(x==y){
-			System.out.println("Equala");
+		if(x == y){
+			System.out.println("Equals");
 		}else{
-			System.out.println("Not Equal");
+			System.out.println("Not equal");
 		}
-
 		System.out.println(System.identityHashCode(x));
 		System.out.println(System.identityHashCode(y));
+
 	}
 }
