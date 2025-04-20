@@ -7,7 +7,9 @@
 }
 class client{
     public static void main(String [] args){
-        parent obj1= new parent();
+        parent obj= new parent();
 
     }
 }
+
+//parent Constructor
