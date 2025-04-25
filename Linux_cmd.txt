@@ -8,3 +8,5 @@ cd  /mnt/e  //  it can be change drive
 
 mkdir      //  it can be  create folder
 
+
+
