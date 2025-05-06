@@ -1,0 +1,79 @@
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1/accessDefault$ cd ..
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ ls
+Pro1.java  accessDefault
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ vim Pro1a.java
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ javac Pro1a.java
+Pro1a.java:2: error: cannot find symbol
+class Demochild extends Demo{
+                        ^
+  symbol: class Demo
+1 error
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ ls
+Pro1.java  Pro1a.java  accessDefault
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ vim Pro1a.java
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ vim Pro1.java
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ javac -d . Pro1.java
+Pro1.java:2: error: class Demo is public, should be declared in a file named Demo.java
+ public class Demo {
+        ^
+1 error
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ cp  pro1.java Demo.java
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ javac -d . Demo.java
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ ls
+Demo.java  Pro1.java  Pro1a.java  accessDefault
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ cd accessDefault
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1/accessDefault$ ls
+Demo.class
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1/accessDefault$ cd .
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1/accessDefault$ vim Pro1a.java
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1/accessDefault$ cd ..
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ vim Pro1a.java
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ javac Pro1a.java
+Pro1a.java:5: error: invalid method declaration; return type required
+        DemoChild(){
+        ^
+1 error
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ vim Pro1a.java
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ javac Pro1a.java
+Pro1a.java:3: error: cannot access Demo
+class DemoChild extends Demo{
+                        ^
+  bad source file: ./Demo.java
+    file does not contain class Demo
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+1 error
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ ls
+Demo.java  Pro1.java  Pro1a.java  accessDefault
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ vim Pro1a.java
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ javac Pro1a.java
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ java Client
+Demo Constructor
+DemoChild Constructor
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ ls
+Client.class  Demo.java  DemoChild.class  Pro1.java  Pro1a.java  accessDefault
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ mv Demo.java accessDefault/
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ javac Pro1a.java
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ java Client
+Demo Constructor
+DemoChild Constructor
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ vim Pro1a.java
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ javac Pro1a.java
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ vim Pro1a.java
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ javac Pro1a.java
+Pro1a.java:7: error: x is not public in Demo; cannot be accessed from outside package
+                System.out.println(x);
+                                   ^
+1 error
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ ls
+Client.class  DemoChild.class  Pro1.java  Pro1a.java  accessDefault
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ cd accessDefault
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1/accessDefault$ ls
+Demo.class  Demo.java  Pro1a.java
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1/accessDefault$ vim Demo.java
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1/accessDefault$ cd ..
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ javac Pro1a.java
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$ java Client
+Demo Constructor
+DemoChild Constructor
+10
+vishal@DESKTOP-D4VOF03:/mnt/e/java/dailycodes/inheritance/packages/default1$
