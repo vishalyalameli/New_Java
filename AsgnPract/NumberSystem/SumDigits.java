@@ -22,4 +22,3 @@ public class SumDigits {
 // Enter Number
 // 125
 // Sum of digit8
-//
