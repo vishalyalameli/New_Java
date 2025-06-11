@@ -27,7 +27,7 @@ public class Pro8 {
 
         }
 
-
+         sc.close();
 
     }
     
