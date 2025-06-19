@@ -1,6 +1,6 @@
-Interface Demo{
-    static  void fun(){
-        System.out.println("In fun";)
+interface Demo{
+    static void fun(){
+        System.out.println("In fun");
     }
     void run();
 }
@@ -20,7 +20,7 @@ class DemoChil2 implements Demo{
 class Client{
     public static void main(String [] args){
         Demo obj = new DemoChild1();
-        obj.fun();
+        //obj.fun();
         obj.run();
 
         Demo.fun();
